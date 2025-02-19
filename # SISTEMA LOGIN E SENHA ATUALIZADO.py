@@ -1,4 +1,4 @@
-# SISTEMA LOGIN E SENHA SISTEMA
+# SISTEMA LOGIN E SENHA
 class User:
     def __init__(self, username, password):
         self.username = username
@@ -8,7 +8,7 @@ class User:
 class UserManager:
     def __init__(self):
         self.users = {}
-        self.add_user('ADÉMI', 'ADÉMI')  # Adiciona um usuário padrão
+        self.add_user('admin', 'admin')  # Adiciona um usuário padrão
 
     def add_user(self, username, password):
         self.users[username] = User(username, password)
